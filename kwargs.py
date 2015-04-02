@@ -2,21 +2,21 @@
 
 
 def print_arg(name, arg):
-    print "{name}: {argument}".format(name=name, argument=arg)
+    print("{name}: {argument}".format(name=name, argument=arg))
 
 
 def kwargs_stuff(candy, corn, cats='CATS', **kwargs):
 
-    print "named parameters: "
+    print("named parameters: ")
 
     print_arg('candy', candy)
     print_arg('corn', corn)
     print_arg('cats', cats)
 
     for key, value in kwargs.iteritems():
-        print key, value
+        print(key, value)
 
-    print
+    print()
 
 extras = {'one': 1, 'two': 2, 'three': 3}
 kwargs_stuff('sucker', 'maize', 'four legged', **extras)

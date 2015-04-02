@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 def print_arg(name, arg):
-    print "{name}: {argument}".format(name=name, argument=arg)
+    print("{name}: {argument}".format(name=name, argument=arg))
 
 
 
@@ -12,7 +12,7 @@ def print_arg(name, arg):
 
 def named_parameters_default_value(candy, corn, cats="KITTENS!!"):
 
-    print "named parameters: "
+    print("named parameters: ")
 
     print_arg('candy', candy)
     print_arg('corn', corn)

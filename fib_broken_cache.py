@@ -5,7 +5,10 @@ sys.setrecursionlimit(10008)
 
 def fibonacci_cached(number, known_values=[]):
     if known_values == []:
-        print "values are not cached"
+        # print("values are not cached")
+        # This reasigns the value which does not modify
+        # the existing value. So this willbe done on _all_
+        # invocations of this function.
         known_values = [0] * 10000
 
 
@@ -28,8 +31,8 @@ def main():
         print('Enter a number : ')
         number = int(sys.stdin.readline())
         print(fibonacci_cached(number))
-        print "    "
-        print "    "
+        print('')
+        print('')
 
 if __name__=='__main__':
     main()

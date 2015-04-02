@@ -17,8 +17,8 @@ def main():
         print('Enter a number : ')
         number = int(sys.stdin.readline())
         print(fibonacci(number))
-        print "    "
-        print "    "
+        print()
+        print()
 
 if __name__=='__main__':
     main()
